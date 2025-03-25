@@ -22,7 +22,7 @@
     font-family: "TT-Lakes";
     src:
         local('TT-Lakes lighter'),
-        url("TTLakesCondensed-Light.woff") format("woff"),
+        url(/TTLakes/TTLakesCondensed-Light.woff") format("woff"),
         url("/TTLakesCondensed-Light.eot") format("eot"),
         url("/TTLakesCondensed-Light.ttf") format("ttf");
     font-weight: lighter;
