@@ -13,8 +13,8 @@
     src:
         local('TT-Lakes bold'),
         url("/TTLakes-Bold.woff") format("woff"),
-        url("/TTLakes/TTLakes-Bold.eot") format("eot"),
-        url("/TTLakes/TTLakes-Bold.ttf") format("ttf");
+        url("/TTLakes-Bold.eot") format("eot"),
+        url("/TTLakes-Bold.ttf") format("ttf");
     font-weight: bold;
 }
 
@@ -22,9 +22,9 @@
     font-family: "TT-Lakes";
     src:
         local('TT-Lakes lighter'),
-        url("/TTLakes/TTLakesCondensed-Light.woff") format("woff"),
-        url("/TTLakes/TTLakesCondensed-Light.eot") format("eot"),
-        url("/TTLakes/TTLakesCondensed-Light.ttf") format("ttf");
+        url("/TTLakesCondensed-Light.woff") format("woff"),
+        url("/TTLakesCondensed-Light.eot") format("eot"),
+        url("/TTLakesCondensed-Light.ttf") format("ttf");
     font-weight: lighter;
 }
 
