@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "TT-Lakes";
+    src:
+        local("TT-Lakes normal"),
+        url("/TTLakes-Regular.woff") format("woff"),
+        url("/TTLakes/TTLakesCondensed-Regular.eot") format("eot"),
+        url("/TTLakes/TTLakesCondensed-Regular.ttf") format("ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "TT-Lakes";
+    src:
+        local('TT-Lakes bold'),
+        url("/TTLakes-Bold.woff") format("woff"),
+        url("/TTLakes/TTLakes-Bold.eot") format("eot"),
+        url("/TTLakes/TTLakes-Bold.ttf") format("ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "TT-Lakes";
+    src:
+        local('TT-Lakes lighter'),
+        url("/TTLakes/TTLakesCondensed-Light.woff") format("woff"),
+        url("/TTLakes/TTLakesCondensed-Light.eot") format("eot"),
+        url("/TTLakes/TTLakesCondensed-Light.ttf") format("ttf");
+    font-weight: lighter;
+}
+
+body { 
+    font-family: 'TT-Lakes'; 
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.content {
+    min-width: 320px;
+    height: 234px;
+    position: relative;
+    background-color: #F8F8F8;
+    border-top: 1px solid #D9FFF5;
+    transition-property: height;
+    transition-duration: 1s;
+    margin: 0;
+    border-top: 1px solid #D9FFF5;
+}
+
+.content__title {
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    background-image: linear-gradient(-180deg, #F8F8F8, #FFFFFF);
+    align-items: center;
+    padding: 16px;
+    color: #7E7E82;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content__brands {
+    display: flex !important;
+    height: 72px !important;
+    margin-top: 5px !important;
+}
+
+.content__brand {
+    width: 208px;
+    height: 72px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 16px;
+    margin: 16px;
+    background-color: white;
+}
+
+.content__img_short-brand {
+    width: 44px !important;
+    height: 44px;
+}
+
+.content__img {
+    width: 108px;
+    height: 32px;
+}
+
+
+
+.content__button {
+    background-color: #F8F8F8;
+    border: none;
+    display: none;
+    height: 37px;
+    width: 134px;
+    margin: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 0%;
+    transition-duration: 1s;
+}
+
+.content__button_img {
+    width: 24px;
+    height: 16px;
+    position: relative;
+    top: -1px;
+    margin: 0;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.content__button_text {
+    font-family: 'TT-Lakes';
+    position: relative;
+    margin: 0;
+    top: -3px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.img_rotate {
+    transform: rotate(180deg);
+}
+
+
+@media (min-width: 768px) {
+
+    .swiper {
+        overflow: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;}
+        
+    .content {
+        display: flex;
+        flex-direction: column;
+        min-width: 768px;
+        height: auto;
+        transition-property: height;
+        transition-duration: 1s;
+    }
+
+
+    .brands_show {
+        transform: translate3d(0px, 0px, 0px) !important;
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        height: 350px !important;
+        transition-property: height;
+        transition-duration: 1s;
+        margin: 5px 0 16px 0;
+    }
+
+
+    .content__brands {
+        transform: translate3d(0px, 0px, 0px) !important;
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        height: 170px !important;
+        transition-property: height;
+        transition-duration: 1s;
+    }
+
+    .content__brand {
+        margin: 16px;
+        padding: 0;
+        height: 72px;
+        width: 208px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 16px;
+        margin: 16px 0 0 24px;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .content__button {
+        display: inline-flex;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        min-width: 768px;
+        max-width: 1120px;
+    }
+
+    .brands_show {
+        min-width: auto;
+        max-width: 1120px;
+        height: 260px !important;
+        transition-property: height;
+        transition-duration: 1s;
+    }
+}
